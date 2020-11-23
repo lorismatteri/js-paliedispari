@@ -11,7 +11,7 @@ console.log(userNumber);
 
 function randomNumber(min, max) {
     
-    return Math.floor(Math.random() * (max - min) ) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 var numberPc = Number(randomNumber(1, 5));
@@ -27,8 +27,10 @@ console.log(somma);
 //Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 
 function pari(number) {
-    if(number % 2 === 0) {
+    if(number % 2 == 0) {
         return true;
+    } else if (number % 2 !== 0) {
+        return false;
     }
 }
 
